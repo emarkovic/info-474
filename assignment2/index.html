@@ -5,35 +5,83 @@
 	<title>Document</title>
 
 	<link rel="stylesheet" href="css/c3.min.css">
-	<link rel="stylesheet" href="https://syntagmatic.github.io/parallel-coordinates/d3.parcoords.css">
+	<!-- <link rel="stylesheet" href="https://syntagmatic.github.io/parallel-coordinates/d3.parcoords.css"> -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
-<body>	
-	<h1>Does the mother's/female guardian's job title have an effect on the subject's self esteem?</h1>
+<body>
+	<header>
+		<div class="jumbotron">
+			<div class="container">
+				<h1>Does the mother's/female guardian's job title have an effect on the subject's self esteem?</h1>
+			</div>	
+		</div>
+	</header>
 
-	<h2 id="title"></h2>
-	<div id="chart"></div>	
+	<section>
+		<div class="container">
+			<h2>Data is from the initial survey administered in 1880</h2>
+
+			<h3>Distribution of occupations for mother/female guardian.</h3>
+			<img class="single-img" src="img/occupation-of-mom.png" alt="occupation of mom popularity">
+
+			<h3>Distribution of answers for each of the selected questions. Occupation set to "Service".</h3>
+			<div class="row">
+				<div class="col-md-4"><img src="img/i-feel-good-about-myself.png" alt="i feel good about myself dist"></div>
+				<div class="col-md-4"><img src="img/person-of-worth.png" alt="person of worth dist"></div>
+				<div class="col-md-4"><img src="img/satisfied-with-self.png" alt="satisfied with self dist"></div>
+			</div>
+			<div class="row">
+				<div class="col-md-4"><img src="img/feel-useless-at-times.png" alt="feel useless at times dist"></div>
+				<div class="col-md-4"><img src="img/not-much-proud-of.png" alt="not much proud of dist"></div>
+				<div class="col-md-4"><img src="img/dont-have-enough-control.png" alt="don't have enough control dist"></div>
+			</div>
+		</div>
+	</section>
+
+	<section class="background-colored">
+		<div class="container">
+			<h2>Data is from the initial survey administered in 1880</h2>
+			<h3 id="title"></h3>
+			<div id="chart"></div>				
+		</div>
+	</section>
 	
-	<h2 id="title1"></h2>
-	<div id="chart1"></div>	
+	<section>
+		<div class="container">
+			<h2>Data from the 1st follow up administered in 1990. Occupation set to "Homemaker".</h2>
 
-	<h2 id="title2"></h2>
-	<div id="chart2"></div>	
-	
-	<h2 id="title3"></h2>
-	<div id="chart3"></div>	
-		
-	<h2 id="title4"></h2>
-	<div id="chart4"></div>
+			<h3>Distribution of answers to "I feel good about myself".</h3>
+			<img class="single-img" src="img/Homemaker-q1.png" alt="homemaker question 1 dist">
+		</div>
+	</section>
 
-	<h2 id="title5"></h2>
-	<div id="chart5"></div>
+	<section class="background-colored">
+		<div class="container">
+			<h2>Data from the 1st follow up administered in 1990</h2>
 
-	<h2 id="title6"></h2>
-	<div id="chart6"></div>
+			<h3 id="title1"></h3>
+			<div id="chart1"></div>	
 
-	<h2 id="title7"></h2>
-	<div id="chart7"></div>
+			<h3 id="title2"></h3>
+			<div id="chart2"></div>	
+
+			<h3 id="title3"></h3>
+			<div id="chart3"></div>	
+				
+			<h3 id="title4"></h3>
+			<div id="chart4"></div>
+
+			<h3 id="title5"></h3>
+			<div id="chart5"></div>
+
+			<h3 id="title6"></h3>
+			<div id="chart6"></div>
+
+			<h3 id="title7"></h3>
+			<div id="chart7"></div>
+		</div>
+	</section>
 
 	<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.0.1/lodash.min.js"></script>

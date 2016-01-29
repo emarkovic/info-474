@@ -1,5 +1,7 @@
 
 $(function () {
+	graph(); 
+
 	generate(1, 'I feel good about myself', [
 		['Technical', 30.95, 54.76, 14.29, 0, 0],
 		['Homemaker', 34.13, 55.99, 5.09, 1.20, 3.59],
@@ -73,12 +75,21 @@ $(function () {
 					count++;
 					data.push(tuple);
 				});			
+				console.log(data)
 				createVis(data);
 			});
 	}
 	
 	function createVis(data) {
-		$('#title').text('Occuptation of mom: service');
+		var questions = [
+				'I feel good about myself', 
+				'I dont have enough control over the direction my life is taking',
+				'I feel I am a person of worth, the equal of other people',
+				'On the whole, I am satisfied with myself',
+				'I certainly feel useless at times',
+				'I feel I do not have much to be proud of'
+			]
+		$('#title').text('Occupation of mother/female guardian: service');
 		c3.generate({
 		    bindto: '#chart',
 		    data: {
