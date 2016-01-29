@@ -41,6 +41,7 @@ $(function () {
 		['Homemaker', 4.79, 11.98, 47.9, 31.14, 4.19],
 		['Sales', 0, 15.71, 52.86, 27.14, 4.29]
 	]);
+	
 	function generate(num, question, data) {
 		$('#title' + num).text(question);
 		c3.generate({
