@@ -45,7 +45,7 @@ $(function () {
 	]);
 	
 	function generate(num, question, data) {
-		$('#title' + num).text(question);
+		$('#title' + num).text('"' + question + '"');
 		c3.generate({
 			bindto: '#chart' + num,
 			data: {
