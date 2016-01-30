@@ -55,7 +55,11 @@ $(function () {
 			axis: {
 				x: {
 					type: 'category',
-					categories: ['Strongly Agree', 'Agree', 'Disagree', 'Strongly Disagree', 'Missing']
+					categories: ['Strongly Agree', 'Agree', 'Disagree', 'Strongly Disagree', 'Missing'],
+					label: 'Questions'
+				},
+				y: {
+					label: 'Percentages'
 				}
 			},
 			tooltip: {
@@ -75,7 +79,6 @@ $(function () {
 					count++;
 					data.push(tuple);
 				});			
-				console.log(data)
 				createVis(data);
 			});
 	}
@@ -98,9 +101,11 @@ $(function () {
 		    axis: {
 		    	x: {
 		    		type: 'category',
-		    		categories: questions
+		    		categories: questions,
+		    		label: 'Questions'
 		    	},
 		    	y: {
+		    		label: 'Answers',
 		    		min: 0,
 		    		max: 5,
 		    		tick: {
