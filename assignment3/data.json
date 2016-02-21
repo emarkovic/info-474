@@ -1,0 +1,171 @@
+{
+	"name" : "Web Development",
+	"children" : [
+		{
+			"name" : "Front End",
+			"children" : [
+				{
+					"name" : "JavaScript",
+					"children" : [
+						{"name" : "jQuery"},
+						{"name" : "AJAX"},
+						{"name" : "Underscore and lodash"},
+						{
+							"name" : "Frameworks",
+							"children" : [
+								{"name" : "Angular JS"}, 
+								{"name" : "React"}, 
+								{"name" : "BackBone JS"},
+								{"name" : "Ember"}
+							]							
+						},
+						{
+							"name" : "Unit Testing",
+							"children" : [
+								{"name" : "Jasmine"},
+								{"name" : "Karma"}
+							]
+						}
+					]
+				},
+				{
+					"name" : "HTML",
+					"children" : [
+						{
+							"name" : "Templating",
+							"children" : [
+								{"name" : "Jade"},
+								{"name" : "EJS"},
+								{"name" : "Handlebars"}
+							]
+						}
+					]
+				},
+				{
+					"name" : "CSS",
+					"children" : [
+						{
+							"name" : "Preprocessors",
+							"children" : [
+								{"name" : "Stylus"}, 
+								{"name" : "Sass"}, 
+								{"name" : "Less"}
+							]
+						},
+						{
+							"name" : "Frameworks",
+							"children" : [
+								{"name" : "BootStrap"},
+								{"name" : "Foundation"},
+								{"name" : "Skeleton"},
+								{"name" : "Pure CSS"}
+							]
+						},
+						{"name" : "Responsive Design"}
+					]
+				},
+				{
+					"name" : "Build Tools",
+					"children" : [
+						{"name" : "Grunt"},
+						{"name" : "Gulp"},
+						{"name" : "Browserify"},
+						{"name" : "Require JS"},
+						{"name" : "Webpack"}
+					]
+				}
+			]
+		},
+		{
+			"name" : "All Routes",
+			"children" : [
+				{"name" : "Web Services\/APIs\/Restful Web Services"},
+				{"name" : "FTP"},
+				{"name" : "SSH"},
+				{"name" : "Basic Terminal Usage"},
+				{"name" : "Git"}
+			]
+		},
+		{
+			"name" : "Back End",
+			"children" : [
+				{"name" : "Unit testing for chosen technology"},
+				{"name" : ".net"},
+				{
+					"name" : "Python",
+					"children" : [
+						{
+							"name" : "Frameworks",
+							"children" : [
+								{"name" : "Django"},
+								{"name" : "Flask"}
+							]
+						}						
+					]
+				},
+				{
+					"name" : "PHP",
+					"children" : [
+						{
+							"name" : "Frameworks",
+							"children" : [
+								{"name" : "Laravel"},
+								{"name" : "Symphony"}
+							]
+						}
+					]
+				},
+				{
+					"name" : "Node.js",
+					"children" : [
+						{
+							"name" : "Frameworks",
+							"children" : [
+								{"name" : "Express"},
+								{"name" : "Sails"}
+							]
+						}
+					]
+				},
+				{"name" : "Ruby on Rails"},
+				{
+					"name" : "Databases",
+					"children" : [
+						{
+							"name" : "Caching",
+							"children" : [
+								{"name" : "Squid"},
+								{"name" : "Memcached"},
+								{"name" : "NGINX"},
+								{"name" : "Varnish"}
+							]
+						},
+						{
+							"name" : "SQL",
+							"children" : [
+								{"name" : "PostgreSQL"},
+								{"name" : "MySQL"}
+							]
+						},
+						{
+							"name" : "NoSQL",
+							"children" : [
+								{"name" : "MongoDB"},
+								{"name" : "Redis"}
+							]
+						}																		
+					]
+				},
+				{
+					"name" : "Things to learn",
+					"children" : [
+						{"name" : "APIs\/Restful Services"},
+						{"name" : "Security"},
+						{"name" : "OAUTH 2"},
+						{"name" : "Authorization\/Authentication"}
+					]
+				}
+			]
+		}
+	]
+}
